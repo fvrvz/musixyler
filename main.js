@@ -1,5 +1,5 @@
-const play = document.querySelector('.flaticon-play');
+const btns = document.querySelectorAll('button');
 
-play.addEventListener('click', () => {
+btns.addEventListener('click', () => {
     alert('I am working on it....')
 })
