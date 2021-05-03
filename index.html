@@ -4,62 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waves</title>
-    <link rel="shortcut icon" href="./icons/GitHub-Mark-32px.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./font/flaticon/flaticon.css"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style-mobile.css">
+    <title>Mucxis</title>
 
-    <script src="./main.js" defer></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <!-- FONT AWESOME 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/local-fonts/icon-font/fa-css/all.min.css">
+    
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="wave-container">
-        <!-- <div class="wave wave1"><object data="./images/wave.svg" type="image/svg+xml"></object></div>
-        <div class="wave wave2"><object data="./images/wave.svg" type="image/svg+xml"></object></div>
-        <div class="wave wave3"><object data="./images/wave.svg" type="image/svg+xml"></object></div> -->
-        <div class="wave wave4"><object data="./vectors/bottom-wave.svg" type="image/svg+xml"></object></div>
-    </div>
+    <div class="root-container">
 
-    <main>
-        <header>
-            <nav>
-                <div class="logo-container">
-                    <h3>Faraazy</h3>
-                </div>
-                <div class="navbar">
-                    <ul class="social-btn-container">
-                        <li><a href="https://www.instagram.com/faraazy" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/FaraazKhhan" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.twitter.com/FaraazKhhan" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://faraazkhhan.github.io/portfolio" target="_blank"><i class="fa fa-globe"></i></a></li>
+        <header class="nav-container flex">
+            <div class="container">
+                <h3 class="logo"><a href="#">Mucxis</a></h3>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-link"><a href="#">Home</a></li>
+                        <li class="nav-link"><a href="#explore">Explore</a></li>
+                        <li class="nav-link"><a href="#downloads">Downloads</a></li>
+                        <li class="nav-link"><a href="#about">About</a></li>
+                        <li class="nav-link"><a href="#contact">Contact</a></li>
                     </ul>
+                </nav>
+                <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </nav>
+            </div>
         </header>
 
-        <section class="hero-section">
-            <div class="hero-title-wrapper">
-                <article class="hero-title-container">
-                    <h1>Music</h1>
-                    <p class="big-heading">World</p>
-                    <p class="intro">play music anywhere you go</p>
-                    <button><i class="fa fa-play-circle"></i></button><button><i class="fa fa-pause-circle-o"></i></button>
-                </article>
-            </div>
-
-            <div class="hero-image-container">
-                <!-- <img src="./vectors/hero_vector.svg" alt="hero-vector.svg"> -->
-                <object data="./vectors/hero_vector.svg" type="image/svg+xml"></object>
+        <section class="hero-section flex">
+            <div class="container">
+                <div class="hero-title-area">
+                    <div class="title-container">
+                        <h1 class="title">A new way to <span>communicate.</span></h1>
+                        <p class="sub-title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, excepturi.
+                        </p>
+                        <a href="#explore" class="hero-cta btn-primary hi-emp-btn">Let's Explore</a>
+                    </div>
+                </div>
+                <div class="hero-img-area">
+                    <img src="./assets/vectors/undraw_Music_re_a2jk.svg" alt="object points towards music-player" class="image">
+                </div>
             </div>
         </section>
-        
 
-        <footer>
-            <p class="footer-text">Copyright &copy; Faraazy 2021</p>
+        <section class="explore-section flex" id="explore">
+            <div class="container">
+                <h2 class="page-title">Explore</h2>
+                <div class="inner-container">
+                    <div class="search-bar-container">
+                        <input type="search" class="search-bar" placeholder="Search">
+                        <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="items-container">
+                        <article class="item">
+                            <!-- <img src="" alt="" class="image"> -->
+                            <h1>Item not yet available</h1>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="downloads-section flex" id="downloads">
+            <div class="container">
+                <h2 class="page-title">Downloads</h2>
+                <div class="inner-container">
+                    <div class="not-avail">
+                        <h1>Downloads not available</h1>
+                        <p>At this moment, try again later</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section flex" id="about">
+            <div class="container">
+                <h2 class="page-title">About</h2>
+                <div class="inner-container">
+                    <div class="about-img-area">
+                        <img src="./assets/muxcis_icon.svg" alt="brand logo" class="image">
+                        <h1 class="logo">mucxis</h1>
+                    </div>
+                    
+                    <div class="about-text-area">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores tenetur quis similique enim, reprehenderit quam sunt recusandae temporibus culpa?
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, enim! Delectus voluptatibus, at commodi adipisci explicabo illum harum eos esse ducimus animi! Illo voluptas adipisci animi, dolore veritatis voluptatem molestiae?
+                        </p>
+                        <div class="team-container">
+                            <div class="team-card">
+                                <img src="./assets/images/faiz.jpg" alt="Mucxis CEO">
+                                <p>Faraaz Khhan</p>
+                                <p>Developer - Mucxis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section flex" id="contact">
+            <div class="container">
+                <h3 class="page-title">Contact</h3>
+                <div class="inner-container">
+                    <form action="" class="contact-form">
+                        <div class="input-container">
+                            <!-- <label for="name">Name</label> -->
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="input-container">
+                            <!-- <label for="email">Email</label> -->
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="input-container">
+                            <!-- <label for="Message">Message</label> -->
+                            <textarea name="message" id="message" placeholder="Type your message" cols="30" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary hi-emp-btn" id="submit-btn">Send</button>
+                    </form>
+
+                    <div class="contact-img-area">
+                        <img src="./assets/vectors/undraw_compose_music_ovo2 (1).svg" alt="music nodes" class="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer flex">
+            <div class="container">
+                <h3 class="footer title">Faraazy</h3>
+                <div class="inner-container">
+                    <p>Follow me on:</p>
+                    <div class="social-icons-container">
+                        <a href="https://www.facebook.com/FaraazKhhan" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/faraazy" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/FaraazKhhan" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.github.com/FaraazKhhan" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/FaraazKhhan" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.behance.com/FaraazKhhan" target="_blank">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://www.dribbble.com/FaraazKhhan" target="_blank">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="copyright-container">
+                    Copyright 2021 &copy; Faraazy.Mucxis
+                </p>
+            </div>
         </footer>
 
-    </main>
-    
+    </div>
+
+    <!-- <div class="dialog-container">
+        <div class="dialog-box">
+            <h2>Sorry! <i class="fa fa-exclamation-triangle"></i></h2>
+            <p>Website is not yet ready!</p>
+            <a href="#" class="btn-danger" id="dialog-close-btn">Take me home</a>
+        </div>
+    </div> -->
+
+    <script src="./script/main.js" defer></script>
 </body>
 </html>
